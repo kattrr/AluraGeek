@@ -1,0 +1,40 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+:root{
+
+    /*Fonts*/
+    --font-title:900 3.8rem 'Cinzel', serif;
+    --font-subTitle1:600 1.75rem 'Cinzel', serif;
+    --font-subTitle2:400 1.5rem 'Cinzel', serif;
+    --font-text--bold: 700 1.375rem 'Tinos', serif;
+    --font-text:400 1.375rem 'Tinos', serif;
+    --font-text2--bold:700 1rem 'Tinos', serif;
+    --font-text2:400 1rem 'Tinos', serif;
+    
+    /*Colors*/
+    --bg-color: #EDE7E3;
+    --bg-secondary-color: #c2e7ff;
+    --bg-third-color:#f5f5f5;
+    --text-color:#000C14;
+    --text-color-hidden:#A2A2A2;
+    --btns-links-color: #1F71DF;
+
+    /*altura secciones*/
+    --altura-header: 11.2304688vh;
+    --altura-main--home: calc(160.45vh - var(--altura-header));
+    --altura-banner: calc(45.6054688vh - var(--altura-header));
+    --altura-categorias:calc(100% - var(--altura-banner));
+    --altura-main--login: calc(57.618vh - var(--altura-header));
+
+}
+.main--home{
+    height: var(--altura-main--home);
+    
+}
+.main--login{
+    height: var(--altura-main--login);
+    background-color: var(--bg-third-color);
+}

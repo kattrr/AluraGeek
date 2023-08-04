@@ -1,0 +1,13 @@
+.section--copyright{
+    flex-direction: column;
+    height: 21.7%;
+    justify-content: space-around;
+}
+.section__text{
+    font: var(--font-text);
+    margin-top: 1rem;
+}
+.section__text--date{
+    margin-bottom: 1rem;
+    margin-top: 0;
+}

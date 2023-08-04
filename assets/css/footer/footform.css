@@ -1,0 +1,10 @@
+.form__title--foot{
+    margin-bottom: 1em;
+}
+.form__input--sms{
+    height: 8.0079vh;
+}
+.form__btn--foot{
+    width: 30%;
+    font: var(--font-text2--bold);
+}

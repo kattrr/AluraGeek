@@ -1,0 +1,14 @@
+.section--login{
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.form--login{
+    margin: 0;
+    width: 37.1837816%;
+}
+.form__title--login{
+    text-align: center;
+    font: var(--font-subTitle1);
+    margin-bottom: 1em;
+}

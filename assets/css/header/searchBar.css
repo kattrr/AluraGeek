@@ -1,0 +1,30 @@
+.header__searchBar{
+    display: inline-flex;
+    flex-direction: row;
+    padding:  0.25em 0.5em;
+    background-color: var(--bg-secondary-color);
+    margin: 1em 0;
+    border-radius: calc(0.5 * 40px);
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.header__searchBar--input{
+    border: none;
+    width: 84%;
+    height: 40px;
+    background-color: var(--bg-secondary-color);
+}
+
+.header__searchBar--input:focus, .header__searchBar--input:active{
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.header__searchBar--icon{
+    margin-left: 0;
+    width: 5%;
+    color: var(--text-color);
+}

@@ -1,0 +1,9 @@
+.btns{
+    cursor: pointer;
+    height: 3.25em;
+    width: 100%;
+    font: var(--font-text2);
+    border: 1px solid var(--btns-links-color);
+    background-color: var(--btns-links-color);
+    color: white ;
+}

@@ -1,0 +1,30 @@
+.box__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+
+}
+.card{
+    display: block;
+    max-height: 252px;
+    min-width: 176px;
+    max-width: 176px;
+    margin: 0 0.5rem 0 0;
+}
+
+.card__text{
+    margin-top: 0.3rem;
+    font: var(--font-text2);
+    color: var(--text-color);
+}
+.card__text--price{
+    font: var(--font-text--bold);
+}
+.card__link{
+    font: var(--font-text2--bold);
+    color: var(--btns-links-color);
+    text-decoration: none;
+}

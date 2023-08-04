@@ -1,0 +1,29 @@
+.section--contacto{
+    height: 100%;
+    padding-top: 4rem;
+    align-items: flex-start;
+}
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about__list{
+    font: var(--font-text);
+       
+}
+.list__item{
+    margin-bottom: 1em;
+}
+.list__item--link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.form--foot{
+    display: flex;
+    flex-direction: column;
+    width: 49.2957746%;
+}
+

@@ -1,0 +1,14 @@
+.footer{
+    height: 45.89848375vh;
+}
+
+.footer__contacto{
+    background-color: var(--bg-secondary-color);
+    min-height: 35.939vh;
+}
+@media screen and (min-width:1700px){
+    .footer{
+        position: relative;
+        bottom: -8vh;
+    } 
+}
