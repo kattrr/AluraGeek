@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4121144db5.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
@@ -12,77 +18,43 @@
     <link rel="stylesheet" href="../css/header/header.css">
     <link rel="stylesheet" href="../css/header/searchBar.css">
     <link rel="stylesheet" href="../css/header/btn.css">
-    <link rel="stylesheet" href="../css/main/productos/productos.css">
+    
     <link rel="stylesheet" href="../css/footer/footer.css">
     <link rel="stylesheet" href="../css/footer/contacto.css">
     <link rel="stylesheet" href="../css/footer/footform.css">
     <link rel="stylesheet" href="../css/footer/copyright.css">
-
-    <title>Productos</title>
+    <title>Document</title>
 </head>
 <body>
     <header >
         <div class="section--header section">
-            <img class="header__imagen" src="../img/Logo.png" onclick="inicio()" alt="Logo-Tienda" >
+            <img class="header__imagen" src="../img/Logo.png" alt="Logo-Tienda" >
             <div class="header__searchBar">
                 <input class="header__searchBar--input" type="text"  id="header__searchBar--input" placeholder="Search...">
                 <label for="header__searchBar--input"><i class="header__searchBar--icon fa-solid fa-magnifying-glass" ></i></label>
             </div>
             <div class="btn">
+                <button>Menú Administrador</button>
             </div>    
         </div>
     </header>
-    <main>
-        <section class="section section--productos">
-            <div class="section__head">
-                <h1 class="section__head--title">Productos</h1>
-                <button class="btns section__head--btn">Agregar Producto</button>
-            </div>
-            <div class="section__cards" data-product>
-                <div class="card">
-                    <img class="card__img" src="../img/stormtropper.png" alt="stormtropper">
-                    <h3 class="card__text card__text--title">Titulo Producto</h3>
-                    <p class="card__text card__text--price">precio</p>
-                    <a class="card__link" href="">ver producto</a>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="../img/babyyoda.png" alt="stormtropper">
-                    <h3 class="card__text card__text--title">Titulo Producto</h3>
-                    <p class="card__text card__text--price">precio</p>
-                    <a class="card__link" href="">ver producto</a>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="../img/darth.png" alt="stormtropper">
-                    <h3 class="card__text card__text--title">Titulo Producto</h3>
-                    <p class="card__text card__text--price">precio</p>
-                    <a class="card__link" href="">ver producto</a>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="../img/yoda.png" alt="stormtropper">
-                    <h3 class="card__text card__text--title">Titulo Producto</h3>
-                    <p class="card__text card__text--price">precio</p>
-                    <a class="card__link" href="">ver producto</a>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="../img/canecasw.png" alt="stormtropper">
-                    <h3 class="card__text card__text--title">Titulo Producto</h3>
-                    <p class="card__text card__text--price">precio</p>
-                    <a class="card__link" href="">ver producto</a>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="../img/legosw.png" alt="stormtropper">
-                    <h3 class="card__text card__text--title">Titulo Producto</h3>
-                    <p class="card__text card__text--price">precio</p>
-                    <a class="card__link" href="">ver producto</a>
-                </div>
-                
-            </div>
+    <main class="main--login">
+        <section class="section section--addProducts">
+            <form class="form form--addProducts">
+                <h3 class="form__title form__title--addProducts">Agregar Nuevo Producto</h3>
+                <input class="form__input form__input--url" placeholder="Url Imagen" type="url">
+                <input class="form__input form__input--category"  placeholder="Categoria" type="text" >
+                <input class="form__input form__input--name"  placeholder="Nombre del Producto" type="text">
+                <input class="form__input form__input--price"  placeholder="Precio" type="text">
+                <textarea  id="" cols="30" rows="10"  class="form__input form__input--sms"  placeholder="Descripción"></textarea>
+                <button class="btns form__btn form__btn--addProducts" type="submit">Agregar Producto</button>
+            </form>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__contacto">
             <section class="section--contacto section">
-                <img src="assets/img/Logo.png" alt="Logo-Tienda" class="about__img">
+                <img src="../img/Logo.png" alt="Logo-Tienda" class="about__img">
                 <ul class="about__list">
                     <li class="list__item">
                         <a class="list__item--link" href="">Quienes Somos</a>
