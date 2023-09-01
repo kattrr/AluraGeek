@@ -1,35 +1,17 @@
 //GET
-const productsList = () => {
-    fetch("http://localhost:3000/productos")
-    .then(response => response.json())
-    .catch(error => console.log(error))
-}
+const listaProductos = () => fetch("http://localhost:3000/producto").then(response => response.json());
 
 //POST
-const createProduct = (name, imgUrl, price) => {
-    fetch("http://localhost:3000/productos",{
-    method: "POST",
-    headers: {
-        "Content-type": "application/json"
+const crearProducto = (name, imgUrl, price) =>{
+    return fetch("http://localhost:3000/producto", {
+        method: "POST",
+        headers: {
+            "content-Type": "application/json",
         },
-    body: JSON.stringify({
-        name,
-        imgUrl,
-        price
-        })
-    }).then(response => {
-        if (response.ok){
-            return response.body
-        }
-    })
-    throw new Error("Couldn't create product")
-}
-
-//PUT
-
-//DELETE
-
-export const serviceProducts = {
-    productsList,
-    createProduct
-}
+        body: JSON.stringify({name, imgUrl, price, id: uuid.v4()})
+    });
+};
+export const productServices = {
+    listaProductos,
+    crearProducto
+};

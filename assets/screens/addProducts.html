@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/header/header.css">
     <link rel="stylesheet" href="../css/header/searchBar.css">
     <link rel="stylesheet" href="../css/header/btn.css">
-    
+    <link rel="stylesheet" href="../css/main/productos/productos.css">
     <link rel="stylesheet" href="../css/footer/footer.css">
     <link rel="stylesheet" href="../css/footer/contacto.css">
     <link rel="stylesheet" href="../css/footer/footform.css">
@@ -40,13 +40,30 @@
     </header>
     <main class="main--login">
         <section class="section section--addProducts">
-            <form class="form form--addProducts">
-                <h3 class="form__title form__title--addProducts">Agregar Nuevo Producto</h3>
-                <input class="form__input form__input--url" placeholder="Url Imagen" type="url">
-                <input class="form__input form__input--category"  placeholder="Categoria" type="text" >
-                <input class="form__input form__input--name"  placeholder="Nombre del Producto" type="text">
-                <input class="form__input form__input--price"  placeholder="Precio" type="text">
-                <textarea  id="" cols="30" rows="10"  class="form__input form__input--sms"  placeholder="Descripción"></textarea>
+            <h3 class="form__title form__title--addProducts">Agregar Nuevo Producto</h3>
+            <form class="form form--addProducts" data-form >
+                <input 
+                    class="form__input form__input--url" 
+                    placeholder="Url Imagen" 
+                    type="text" 
+                    data-url
+                />
+                <input 
+                    name="nombre" 
+                    id="nombre--product" 
+                    class="form__input form__input--name"  
+                    placeholder="Nombre del Producto" 
+                    type="text" 
+                    data-name 
+                />
+                <input 
+                    name="price"
+                    id="price"
+                    class="form__input form__input--price"  
+                    placeholder="Precio" 
+                    type="text"
+                    data-price 
+                />
                 <button class="btns form__btn form__btn--addProducts" type="submit">Agregar Producto</button>
             </form>
         </section>
@@ -75,7 +92,8 @@
                         <a class="list__item--link" href="">Anuncie Aquí</a>
                     </li>
                 </ul>
-                <form class="form form--foot">
+                
+                <form class="form form--foot" >
                     <h3 class="form__title form__title--foot">Hable Con Nosotros</h3>
                     <input class="form__input form__input--name" placeholder="Nombre" type="text">
                     <textarea class="form__input form__input--sms" placeholder="Escriba su mensaje" cols="30" rows="10"></textarea>
@@ -88,5 +106,7 @@
             <p class="section__text section__text--date">2023</p>
         </section>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../../controller/createProductsController.js"></script>
 </body>
 </html>

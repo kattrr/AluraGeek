@@ -45,3 +45,7 @@
     color: var(--btns-links-color);
     text-decoration: none;
 }
+.card__img{
+ width:176px;
+ height: 174px;
+}
